@@ -15,7 +15,11 @@ public class literals {
         million = 10_00_000;  // gives programmer ease to working with large digit numbers
 
         double frac = 1e6; // equivatent to 1000000
-        System.out.println(frac);
+
+        char c = 'a';
+        c++; // --> Gives b
+        // c = c + 1 don't work here
+        System.out.println(c);
     
     }
 }
