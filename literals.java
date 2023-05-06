@@ -9,8 +9,11 @@ public class literals {
         int deci = 26;
         int by = 0b110; // 6
         int ot = 067; // 55
-        int hex = 0x1a; // 26
-        System.out.println(hex);
+        int hex = 0xF; // 15
+
+        int million = 1000000;
+        million = 10_00_000;  // gives programmer ease to working with large digit numbers
+        System.out.println(million);
     
     }
 }
