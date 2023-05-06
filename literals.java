@@ -13,7 +13,9 @@ public class literals {
 
         int million = 1000000;
         million = 10_00_000;  // gives programmer ease to working with large digit numbers
-        System.out.println(million);
+
+        double frac = 1e6; // equivatent to 1000000
+        System.out.println(frac);
     
     }
 }
