@@ -9,7 +9,8 @@ public class literals {
         int deci = 26;
         int by = 0b110; // 6
         int ot = 067; // 55
-        System.out.println(by);
+        int hex = 0x1a; // 26
+        System.out.println(hex);
     
     }
 }
