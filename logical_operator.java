@@ -1,6 +1,6 @@
 import javax.print.event.PrintEvent;
 
-public class logicalO {
+public class logical_operator {
     public static void main(String[] args) {
         System.out.println(true & true);
         System.out.println(true &false);
@@ -16,5 +16,6 @@ public class logicalO {
         System.out.println(2>3 | 2>1);
         System.out.println(2>3 & 2>1);
 
+        // 
     }
 }
