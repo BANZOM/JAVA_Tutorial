@@ -1,12 +1,11 @@
 public class while_loop {
     public static void main(String[] args) {
-        boolean S = true;
-
-        while (S) {
-            System.out.println("Hello");
-            S = false;
+        
+        int a = 1;
+        while (a <= 10) {
+            System.out.println(a);
+            a++;
         }
 
-        System.out.println(S);
     }
 }
