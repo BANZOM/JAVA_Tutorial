@@ -1,5 +1,5 @@
 class demo {
-    
+    double pi = 3.14;
 }
 
 public class methods {
