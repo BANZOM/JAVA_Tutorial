@@ -4,6 +4,11 @@ class demo {
         System.out.println("m1");
     }
 
+    public double m2(int r) {
+        double area = pi * r * r;
+        return area;
+    }
+
 }
 
 public class methods {
