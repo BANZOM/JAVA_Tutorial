@@ -20,10 +20,18 @@ public class Array2 {
         int col = 5;
         int[][] b = a.Integer_array(row, col);
 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print(b[i][j]);
-                System.out.print(",");
+        // for (int i = 0; i < row; i++) {
+        //     for (int j = 0; j < col; j++) {
+        //         System.out.print(b[i][j]);
+        //         System.out.print(",");
+        //     }
+        //     System.out.println();
+        // }
+
+        // new loop for array:
+        for(int i[] : b ) {
+            for(int j : i){
+                System.out.print(j + ", ");
             }
             System.out.println();
         }
