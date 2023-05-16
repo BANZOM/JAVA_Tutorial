@@ -5,10 +5,18 @@ public class Jagged_array {
         arr[1] = new int[5];
         arr[2] = new int[3];
 
-        System.out.println(arr.length);
-        System.out.println(arr[0].length);
-        System.out.println(arr[1].length);
-        System.out.println(arr[2].length);
-        
+        // System.out.println(arr.length);
+        // System.out.println(arr[0].length);
+        // System.out.println(arr[1].length);
+        // System.out.println(arr[2].length);
+
+        // print the array:
+        for(int []i : arr) {
+            for(int j: i) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
