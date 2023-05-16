@@ -16,5 +16,13 @@ public class array {
         for (int i = 0; i < arr2.length; i++) {
             System.out.println(arr2[i]);
         }
+
+        // new loop:
+        System.out.println("New loop method: ");
+        for(int i: arr)
+        {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 }
