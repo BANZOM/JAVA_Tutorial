@@ -18,5 +18,8 @@ public class Array_object {
         s3.age = 21;
 
         Student[] students = new Student[4];
+        students[0] = s1;
+        students[1] = s2;
+        students[2] = s3;
     }
 }
