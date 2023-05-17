@@ -32,8 +32,13 @@ public class Array_object {
         students[2] = s3;
 
         // Iterating through the array and printing the details of each student
-        for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].name + " " + students[i].age);
+        // for (int i = 0; i < students.length; i++) {
+        //     System.out.println(students[i].name + " " + students[i].age);
+        // }
+
+        // Enhanced for loop
+        for(Student s: students){
+            System.out.println(s.name + " " + s.age);
         }
     }
 }
