@@ -17,9 +17,13 @@ public class Array_object {
         s3.name = "Banzo";
         s3.age = 21;
 
-        Student[] students = new Student[4];
+        Student[] students = new Student[3];
         students[0] = s1;
         students[1] = s2;
         students[2] = s3;
+
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i].name + " " + students[i].age);
+        }
     }
 }
