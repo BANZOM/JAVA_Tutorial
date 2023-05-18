@@ -1,7 +1,8 @@
 package Project1;
 
 public class Area {
-    private length, breadth;
+    private int length;
+    private int breadth;
 
     // constructor
     Area (int l, int b) {
@@ -11,7 +12,11 @@ public class Area {
 
     // default constructor
     Area() {
-        
+
+    }
+
+    public void calculate() {
+        System.out.println("Area is " + length * breadth);
     }
 }
 
