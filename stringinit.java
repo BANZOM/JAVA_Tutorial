@@ -13,5 +13,8 @@ public class stringinit {
         // printing hashcodes
         System.out.println("The Hashcode of s is " + s.hashCode());
 
+        String s2 = "World";
+        System.out.println(s1.concat(" " + s2));
+
     }
 }
