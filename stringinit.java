@@ -10,6 +10,8 @@ public class stringinit {
         System.out.println(s);
         System.out.println(s1);
 
+        // printing hashcodes
+        System.out.println("The Hashcode of s is " + s.hashCode());
 
     }
 }
