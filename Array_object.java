@@ -12,7 +12,7 @@ public class Array_object {
      * @param args The command-line arguments.
      */
     public static void main(String[] args) {
-        // Creating three student objects
+        // Creating three student objects   
         Student s1 = new Student();
         s1.name = "Aditya";
         s1.age = 19;
