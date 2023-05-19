@@ -11,6 +11,8 @@ public class immutability_checking {
         System.out.println(s1 == s3); // true
 
         // here the object "Hello" will goes under Garbage collector from the string constant pool;
+        // as the String is immutable
+        // so we have stringbuffer and stringbuilder for mutable strings
 
     }
 }
