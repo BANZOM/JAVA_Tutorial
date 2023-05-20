@@ -13,6 +13,7 @@ class Cars{
 public class Static_and_Instance_var {
     public static void main(String[] args) {
         Cars car1 = new Cars();
+        Cars car2 = new Cars();
 
         car1.name = "BMW";
         car1.seats = 4;
@@ -20,6 +21,13 @@ public class Static_and_Instance_var {
         car1.tyres = 4;
         car1.noOfLights = 4;
 
+        car2.name = "Porsche";
+        car2.seats = 2;
+        car2.maxSpeed = 250;
+        car2.tyres = 4;
+        car2.noOfLights = 8;
+
         car1.show();
+        car2.show();
     }
 }
