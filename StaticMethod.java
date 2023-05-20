@@ -3,9 +3,9 @@ class Carss {
     int seats;
     int maxSpeed;
 
-    // non static method
-    void show() {
-        System.out.println(name +" has " + seats + " seats with max speed of " + maxSpeed + " KMPH...");
+    // static method
+    static void show(Carss obj) {
+        System.out.println(obj.name +" has " + obj.seats + " seats with max speed of " + obj.maxSpeed + " KMPH...");
     }
 }
 
@@ -24,8 +24,13 @@ public class StaticMethod {
         c2.seats = 2;
         c2.maxSpeed = 250;
 
-        c1.show();
-        c2.show();
+        // c1.show();
+        // c2.show();
+
+
+        // static objects can be called from class name:
+        Carss.show(c1);
+        Carss.show(c2);
 
     }
 }
