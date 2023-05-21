@@ -9,6 +9,14 @@ class StoreDetails {
     public int getId() {
         return id;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
 
 public class IncapsulationImplement {
@@ -16,8 +24,14 @@ public class IncapsulationImplement {
         StoreDetails p1 = new StoreDetails();
         StoreDetails p2 = new StoreDetails();
 
-        System.out.println(p1.getId());
-        System.out.println(p1.getName());
-        
+        p1.setName("P1");
+        p1.setId(11111);
+        p2.setName("p2");
+        p2.setId(22222);
+
+        System.out.println(p1.getId() + " : " + p1.getName());
+        System.out.println(p2.getId() + " : " + p2.getName());
+
+        // p1.name --> error
     }
 }
