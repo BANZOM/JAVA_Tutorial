@@ -2,11 +2,18 @@ class A{
     A(){
         System.out.println("in default constructor of A");
     }
+    A(String s){
+        System.out.println("in parameterized constructor of A");
+    }
 }
 
 class B extends A{
     B(){
         System.out.println("in default constructor of B");
+    }
+
+    B(int x){
+        System.out.println("in parameterized constructor of B");
     }
 }
 
@@ -26,7 +33,8 @@ public class ThisAndSuper {
         // super() method can be used only in constructors
         // super() method can be used only once
 
-        B obj1 = new B();
+        // B obj1 = new B();
+        B obj2 = new B(10);
 
         
     }
