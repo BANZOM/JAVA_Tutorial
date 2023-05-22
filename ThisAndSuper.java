@@ -9,11 +9,12 @@ class A{
 
 class B extends A{
     B(){
-        super("for parameter");
+        // super("for parameter");
         System.out.println("in default constructor of B");
     }
 
     B(int x){
+        super("for parameter");
         System.out.println("in parameterized constructor of B");
     }
 }
@@ -36,7 +37,8 @@ public class ThisAndSuper {
 
         // B obj1 = new B();
         // B obj2 = new B(10);
-        B obj3 = new B();
+        // B obj3 = new B();
+        B obj4 = new B(10);
 
         
     }
