@@ -1,0 +1,49 @@
+Final keyword:
+
+In Java, "final" is a keyword that can be used to declare a variable, a method or a class.
+
+When used to declare a variable, the "final" keyword indicates that the value of that variable cannot be changed once it has been assigned a value. This makes the variable a constant.
+For example:
+
+'''
+final int MAX_VALUE = 100;
+'''
+
+In this code, the variable "MAX_VALUE" has been declared as final, so its value cannot be changed once it has been initialized to 100.
+
+
+
+When used to declare a method, the "final" keyword indicates that the method cannot be overridden by any subclass. Therefore, the implementation of the method is fixed and cannot be modified in a subclass.
+So we can also say that it is used to stop method overrides when used with method. 
+For example:
+
+'''
+public class ParentClass {
+    public final void printMessage() {
+        System.out.println("This message cannot be changed by a subclass");
+    }
+}
+'''
+'''
+public class ChildClass extends ParentClass {
+    // This will result in a compile-time error
+    public void printMessage() {
+        System.out.println("This message overrides the parent method");
+    }
+}
+'''
+
+Finally, when used to declare a class, the "final" keyword indicates that the class cannot be extended by any subclass. Therefore, the class is sealed and cannot be modified or subclassed further.
+So we can also say that it is used to stop inheritance when used with class
+For example:
+
+'''
+public final class FinalClass {
+    // Class implementation here
+}
+
+// This will result in a compile-time error
+public class SubClass extends FinalClass {
+    // Class implementation here
+}
+'''
