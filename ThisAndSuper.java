@@ -9,7 +9,7 @@ class A{
 
 class B extends A{
     B(){
-        super();
+        super("for parameter");
         System.out.println("in default constructor of B");
     }
 
