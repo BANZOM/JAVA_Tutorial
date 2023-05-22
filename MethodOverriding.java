@@ -4,9 +4,12 @@ class ClassParent {
     }
 }
 
+class ClassChild extends ClassParent{
+}
+
 public class MethodOverriding {
-    public static void main(String[] args) {
-        ClassParent p = new ClassParent();
-        p.m1();
+    public static void main(String[] args) {    
+        ClassChild c = new ClassChild();
+        c.m1();
     }
 }
