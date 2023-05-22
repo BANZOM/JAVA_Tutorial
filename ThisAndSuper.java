@@ -4,6 +4,12 @@ class A{
     }
 }
 
+class B{
+    B(){
+        System.out.println("in default constructor of B");
+    }
+}
+
 public class ThisAndSuper {
     // Understanding the this() an super() methods 
     public static void main(String[] args) {
@@ -20,7 +26,7 @@ public class ThisAndSuper {
         // super() method can be used only in constructors
         // super() method can be used only once
 
-        A obj1 = new A();
+        B obj1 = new B();
 
         
     }
