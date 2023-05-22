@@ -1,0 +1,20 @@
+Access modifiers are used in object-oriented programming languages like Java to control 
+the visibility and accessibility of class members such as fields, methods, and inner classes.
+
+-The public access modifier makes the member accessible to all classes in the same package or in any other package.
+
+-The private access modifier restricts access to the member to only the class that declares it.
+
+-The protected access modifier allows access to the member by the class that declares it and its subclasses.
+
+-The default access modifier, also known as package-private, is used when no access modifier is specified. 
+ It restricts access to the member to only the classes in the same package.
+
+
+
+General Idea:
+- make classes public
+- make variables private
+- methods are most of the time public
+- make method protected only if you want to use it with subclasses
+- Avoid using default
