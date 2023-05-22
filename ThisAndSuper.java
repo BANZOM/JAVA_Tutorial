@@ -1,3 +1,9 @@
+class A{
+    A(){
+        System.out.println("in default constructor of A");
+    }
+}
+
 public class ThisAndSuper {
     // Understanding the this() an super() methods 
     public static void main(String[] args) {
@@ -14,7 +20,8 @@ public class ThisAndSuper {
         // super() method can be used only in constructors
         // super() method can be used only once
 
-        
+        A obj1 = new A();
+
         
     }
 }
