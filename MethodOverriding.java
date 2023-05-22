@@ -5,6 +5,9 @@ class ClassParent {
 }
 
 class ClassChild extends ClassParent{
+    void m1(){
+        System.out.println("in m1 of B");
+    }
 }
 
 public class MethodOverriding {
