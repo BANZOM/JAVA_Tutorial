@@ -4,7 +4,7 @@ class A{
     }
 }
 
-class B{
+class B extends A{
     B(){
         System.out.println("in default constructor of B");
     }
