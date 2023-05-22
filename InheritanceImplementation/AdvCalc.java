@@ -1,6 +1,6 @@
 package InheritanceImplementation;
 
-public class AdvCalc {
+public class AdvCalc extends Calc{
     public int multi(int a, int b) {
         return a * b;
     }
