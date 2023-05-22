@@ -1,4 +1,4 @@
-class A{
+class A extends Object{
     A(){
         System.out.println("in default constructor of A");
     }
@@ -41,6 +41,8 @@ public class ThisAndSuper {
         // B obj3 = new B();
         // B obj4 = new B(10);
         B obj5 = new B(20);
+
+        // In java all classes extends class 'Object' by default.
 
         
     }
