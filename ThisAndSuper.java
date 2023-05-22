@@ -9,6 +9,7 @@ class A{
 
 class B extends A{
     B(){
+        super();
         System.out.println("in default constructor of B");
     }
 
@@ -34,7 +35,8 @@ public class ThisAndSuper {
         // super() method can be used only once
 
         // B obj1 = new B();
-        B obj2 = new B(10);
+        // B obj2 = new B(10);
+        B obj3 = new B();
 
         
     }
