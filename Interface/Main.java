@@ -1,5 +1,8 @@
 package Interface;
 
+class Computer{
+
+}
 class Laptops{
     void development() {
         System.out.println("laptop hardware...");
@@ -14,6 +17,7 @@ class Desktop{
 
 class Developer{
     void coding(Laptops laptop) {
+        laptop.development();
         System.out.println("Developer is coding...");
     }
 }
@@ -25,7 +29,7 @@ public class Main {
         Desktop desk1 = new Desktop();
 
         dev1.coding(lap1);
-        // dev1.coding(desk1);  not works
+        
 
         
     }
