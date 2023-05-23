@@ -1,17 +1,16 @@
 package Interface;
 
-class Computer{
-    void development() {
-    }
+interface Computer{
+    void development();
 }
-class Laptops extends Computer{
-    void development() {
+class Laptops implements Computer{
+    public void development() {
         System.out.println("laptop hardware...");
     }
 }
 
-class Desktop extends Computer{
-    void development() {
+class Desktop implements Computer{
+    public void development() {
         System.out.println("desktop hardware...");
     }
 }
