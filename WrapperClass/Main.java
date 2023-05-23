@@ -14,7 +14,11 @@ public class Main {
         System.out.println(pn1);
         System.out.println(pn2);
 
-
+        String s = "123";
+        Integer wn3 = Integer.valueOf(s);
+        int pn3 = Integer.parseInt(s);
+        System.out.println(wn3);
+        System.out.println(pn3);
         
     }
 }
