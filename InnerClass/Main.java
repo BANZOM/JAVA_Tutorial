@@ -11,6 +11,12 @@ class Outer{
             System.out.println("in Inner..");
         }
     }
+
+    static class SInner{
+        void display() {
+            System.out.println("in Static inner..");
+        }
+    }
 }
 
 public class Main {
@@ -20,5 +26,8 @@ public class Main {
 
         Outer.Inner objI = objO.new Inner();
         objI.display();
+
+        Outer.SInner objS = new Outer.SInner();
+        objS.display();
     }
 }
