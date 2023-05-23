@@ -1,0 +1,14 @@
+Boxing and unboxing are operations that allow primitive data types to be converted to and from their object wrapper class equivalents.
+
+Boxing is the process of converting a primitive data type to its corresponding object type. For example, using the Integer wrapper class to convert an int primitive value to an Integer object. This is useful when working with collections, as they can only store objects and not primitives. Boxing is performed automatically by the compiler when necessary, for example, when passing a primitive value to a method that expects an object.
+
+Unboxing is the reverse process of converting an object of a wrapper class to its corresponding primitive data type. For example, using the intValue() method to extract the int value from an Integer object. Unboxing is also performed automatically by the compiler when necessary, for example, when passing an object of a wrapper class to a method that expects a primitive value.
+
+Here's an example of boxing and unboxing in Java:
+
+int myInt = 10; // primitive int
+Integer myInteger = myInt; // autoboxing - converting int to Integer object
+
+int myNewInt = myInteger; // auto-unboxing - converting Integer object to int
+
+In this example, we first box the primitive int into an Integer object using autoboxing. We then unbox the Integer object back into a primitive int using auto-unboxing.
