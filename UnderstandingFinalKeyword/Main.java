@@ -12,6 +12,11 @@ public class Main {
         // final with method
         ChildClass childClass = new ChildClass();
         childClass.print();
+
+
+        // final with class
+        GrandChildClass grandChildClass = new GrandChildClass();
+        grandChildClass.printStar();
     
     }
 }
