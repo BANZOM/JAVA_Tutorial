@@ -1,6 +1,8 @@
 package AbstractImplementation;
 
-public class B extends A{
+
+// B is known to be a concrete class
+public class B extends A{  
     // should define all the abstract methods;
 
 
