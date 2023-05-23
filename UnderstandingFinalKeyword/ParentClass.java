@@ -1,7 +1,7 @@
 package UnderstandingFinalKeyword;
 
 public class ParentClass {
-    void print() {
+    final void print() {
         System.out.println("ParentClass");
     }
 }
