@@ -6,9 +6,8 @@ interface Animal{
     void sleep();
 }
 
-interface Human{
+interface Human extends Animal{
     int avgWeight = 50;
-    void eat();
     void think();
 }
 
