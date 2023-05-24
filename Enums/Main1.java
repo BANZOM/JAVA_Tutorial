@@ -23,7 +23,9 @@ public class Main1 {
         BasicEnum[] x = BasicEnum.values(); // getting all enums in an array
 
         for(BasicEnum i: x) {
-            System.out.println(i);
+            System.out.println(i.ordinal() +" : " + i);
         }
+
+
     }
 }
