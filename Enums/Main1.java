@@ -1,16 +1,10 @@
 package Enums;
 
-enum BasicEnum{
-    ONE,TWO,THREE,START,STOP,TERMINATE,FULL,EMPTY,ETC,UNKNOWN;
-}
 public class Main1 {
     public static void main(String[] args) {
-        BasicEnum e = BasicEnum.ONE;
+        BasicEnum e = BasicEnum.START;
         System.out.println(e);
 
-        System.out.println(BasicEnum.TWO);
-        System.out.println(BasicEnum.THREE);
-        System.out.println(BasicEnum.START);
         System.out.println(BasicEnum.STOP);
         System.out.println(BasicEnum.TERMINATE);
         System.out.println(BasicEnum.FULL);
