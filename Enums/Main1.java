@@ -21,5 +21,9 @@ public class Main1 {
         System.out.println("\n\n\n");
 
         BasicEnum[] x = BasicEnum.values(); // getting all enums in an array
+
+        for(BasicEnum i: x) {
+            System.out.println(i);
+        }
     }
 }
