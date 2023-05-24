@@ -1,0 +1,7 @@
+About Enums:
+
+Enums are a special type of class that contains a group of constants. 
+Enums are used when we know all possible values at compile time, such as choices on a menu, rounding modes, command line flags, etc. 
+It is not necessary that the set of constants in an enum type stay fixed for all time. In Java (from 1.5), enums are represented using enum data type. 
+Java enums are more powerful than C/C++ enums. In Java, we can also add variables, methods and constructors to it. 
+The main objective of enum is to define our own data types(Enumerated Data Types).
