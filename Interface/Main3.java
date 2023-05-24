@@ -34,6 +34,10 @@ public class Main3 {
         obj.think();
         System.out.println("Average weight of human: " + Human.avgWeight);
         System.out.println("Average weight of animal: " + Animal.avgWeight);
+
+        // Human.avgWeight = 70; // cannot update as its final and static
+        // Animal.avgWeight = 150; // cannot update as its final and static
+
     }
     
 }
