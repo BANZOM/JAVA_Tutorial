@@ -23,9 +23,15 @@ public class Main5 {
         x.display();
         
         LE2 y = (int i, int j) -> {
-            System.out.println("Sum of two numbers: " + (i+j));
+            System.out.println("Sum of two numbers with y object: " + (i+j));
         };
 
         y.sumOfTwo(10,20);
+
+        LE2 z = (i,j) -> {
+            System.out.println("Sum of two numbers with z object: " + (i+j));
+        };
+
+        z.sumOfTwo(40,55);
     }
 }
