@@ -10,6 +10,12 @@ interface LE{
 
 public class Main5 {
     public static void main(String[] args) {
+
+        LE x = () -> {
+            System.out.println("printing with the help of Lamda Expression...");
+        };
+
+        x.display();
         
     }
 }
