@@ -44,5 +44,9 @@ public class Main5 {
         };
         int ans = a.sumOfTwo(11, 12);
         System.out.println("Sum of number with LE3: "+ ans);
+
+        LE3 b = (i,j) -> i+j;
+        ans = b.sumOfTwo(120, 12);
+        System.out.println("Sum of number with LE3 alternate is: "+ ans);
     }
 }
