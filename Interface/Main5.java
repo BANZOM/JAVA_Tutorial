@@ -13,6 +13,11 @@ interface LE2{
     void sumOfTwo(int x, int y);
 }
 
+@FunctionalInterface
+interface LE3{
+    int sumOfTwo(int x, int y);
+}
+
 public class Main5 {
     public static void main(String[] args) {
 
@@ -33,5 +38,11 @@ public class Main5 {
         };
 
         z.sumOfTwo(40,55);
+
+        LE3 a = (i,j) -> {
+            return (i+j);
+        };
+        int ans = a.sumOfTwo(11, 12);
+        System.out.println("Sum of number with LE3: "+ ans);
     }
 }
