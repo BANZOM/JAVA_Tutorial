@@ -1,5 +1,8 @@
 package ExceptionExamples;
 
+/*
+ * Raising and Handling the exceptions
+ */
 public class Main1 {
     public static void main(String[] args) {
         
