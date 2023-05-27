@@ -16,5 +16,8 @@ public class Main1 {
 
         int i = Integer.parseInt(rf.readLine()); // returns String
         System.out.println("Given input: "+ i);
+
+
+        rf.close();
     }
 }
