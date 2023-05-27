@@ -14,7 +14,7 @@ public class Main1 {
         InputStreamReader in = new InputStreamReader(System.in);
         BufferedReader rf = new BufferedReader(in);
 
-        int i = rf.read(); // returns ASCII VAlues
-        System.out.println(i); 
+        int i = Integer.parseInt(rf.readLine()); // returns String
+        System.out.println("Given input: "+ i);
     }
 }
