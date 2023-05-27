@@ -6,7 +6,11 @@ public class Main1 {
         for (int i = -10; i <= 10; i++) {
             try {
                 System.out.println(10/i);
-            } catch (Exception e) {
+            } 
+            catch (ArithmeticException e) {
+                System.out.println("Division by zero,"+e);
+            }
+            catch (Exception e) {
                 System.out.println("Something went wrong when i = "+ i);
             }
         }
