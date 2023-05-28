@@ -23,7 +23,7 @@ public class MultiThread {
         X x = new X();
         Y y = new Y();
 
-        x.run();
-        y.run();
+        x.start();
+        y.start();
     }
 }
