@@ -30,6 +30,9 @@ public class MultiThread {
         // setting Priorities of threads
         x.setPriority(1);
         y.setPriority(10);
+        x.setPriority(Thread.MAX_PRIORITY);
+        y.setPriority(Thread.MIN_PRIORITY);
+        x.setPriority(Thread.NORM_PRIORITY);
 
         x.start();
         y.start();
