@@ -28,7 +28,7 @@ class Y extends Thread{
     }
 }
 
-public class MultiThread {
+public class MultiThread1 {
     public static void main(String[] args) {
         X x = new X();
         Y y = new Y();
