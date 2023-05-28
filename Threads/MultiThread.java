@@ -23,7 +23,11 @@ public class MultiThread {
         X x = new X();
         Y y = new Y();
 
-        x.start();
-        y.start();
+        // getting Priorities of threads (Range: 1 to 10)
+        System.out.println(x.getPriority());
+        System.out.println(y.getPriority());
+
+        // x.start();
+        // y.start();
     }
 }
