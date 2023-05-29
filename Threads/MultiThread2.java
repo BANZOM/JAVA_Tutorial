@@ -1,6 +1,6 @@
 package Threads;
 
-class AThread2 extends Thread{
+class AThread2 implements Runnable{
     public void run() {
         for (int i = 0; i < 10; i++) {
             System.out.println("Hello");
@@ -13,7 +13,7 @@ class AThread2 extends Thread{
     }
 }
 
-class BThread2 extends Thread{
+class BThread2 implements Runnable{
     public void run() {
         for (int i = 0; i < 10; i++) {
             System.out.println("GoodBye");
@@ -29,10 +29,14 @@ class BThread2 extends Thread{
 
 public class MultiThread2 {
     public static void main(String[] args) {
-        AThread2 t1 = new AThread2();
-        BThread2 t2 = new BThread2();
+        Runnable t1 = new AThread2();
+        Runnable t2 = new BThread2();
 
-        t1.start();
-        t2.start();
+
+        Thread t1Thread = new Thread(t1);
+        Thread t2Thread = new Thread(t2);
+
+        t1Thread.start();
+        t2Thread.start();
     }
 }
