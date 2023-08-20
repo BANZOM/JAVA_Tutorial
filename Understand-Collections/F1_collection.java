@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collection;
 
 class F1_collection {
@@ -8,9 +9,13 @@ class F1_collection {
          * Collection API -> concept
         */
 
-        Collection c = new Collection<E>() {
-            // since it's a interface so needed to implement all the methods
-        };
+        Collection c = new ArrayList();
+        c.add(1);
+        c.add(2);
+        c.add(3);
+        c.add(4);
+
+        System.out.println(c);
 
         
     }
