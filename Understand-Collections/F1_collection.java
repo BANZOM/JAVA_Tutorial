@@ -15,7 +15,8 @@ class F1_collection {
         c.add(3);
         c.add(4);
 
-        System.out.println(c);
+        System.out.println(c);  // but we dont know what is the type of c
+        
 
         
     }
