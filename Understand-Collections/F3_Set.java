@@ -4,6 +4,7 @@ import java.util.HashSet;
 public class F3_Set {
     public static void main(String[] args) {
         // Set extends collection but the class which implements set is different and the class name is HashSet.
+        // Instead of using the class HashSet, if we will use the TreeSet, it will give values in sorted order.
         Set <Integer> set = new HashSet<Integer>();
 
         set.add(1);
