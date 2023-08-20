@@ -9,13 +9,16 @@ class F1_collection {
          * Collection API -> concept
         */
 
-        Collection c = new ArrayList();
+        // Collection only works with objects not primitive types i.e int,etc;
+        Collection<Integer> c = new ArrayList<Integer>();
         c.add(1);
         c.add(2);
         c.add(3);
         c.add(4);
 
-        System.out.println(c);  // but we dont know what is the type of c
+        for (Integer i : c) {
+            System.out.println(i);
+        }
         
 
         
