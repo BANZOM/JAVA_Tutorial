@@ -18,5 +18,11 @@ public class F4_Map {
         map.put("Gender", "Male");
 
         System.out.println(map);
+
+        // Iterating through the map
+
+        for(String k : map.keySet()) {
+            System.out.println("Key: " + k + "\t Value: " + map.get(k));
+        }
     }
 }
