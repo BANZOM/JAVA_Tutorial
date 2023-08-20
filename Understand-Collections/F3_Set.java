@@ -3,7 +3,7 @@ import java.util.HashSet;
 
 public class F3_Set {
     public static void main(String[] args) {
-        
+        // Set extends collection but the class which implements set is different and the class name is HashSet.
         Set <Integer> set = new HashSet<Integer>();
 
         set.add(1);
