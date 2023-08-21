@@ -10,7 +10,11 @@ public class Stream_Usuage {
         Stream<Integer> stream = list.stream();
         // using stream to find filter only even nums;
         Stream<Integer> stream1 = stream.filter(i -> i % 2 == 0);
-        stream1.forEach(i -> System.out.print(i + ", "));
+        // stream1.forEach(i -> System.out.print(i + ", "));
+
+        // using map to find square of even nums
+        Stream<Integer> stream2 = stream1.map(i -> i * i);
+        stream2.forEach(i -> System.out.print(i + ", "));
 
         
 
