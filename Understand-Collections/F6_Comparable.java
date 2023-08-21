@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Students {
+class Students implements Comparable<Students> {
     int roll;
     String name;
 
@@ -14,6 +14,13 @@ class Students {
         return roll + " : " + name;
     }
 
+    @Override
+    public int compareTo(Students that) {
+        if (this.roll > that.roll) {
+            return 1;
+        }
+        return -1;
+    }
 
 
 }
@@ -33,15 +40,9 @@ public class F6_Comparable {
         for (Students s : list) {
             System.out.println(s);
         }
+        System.out.println("------------");
 
-        Collections.sort(list, new Comparator<Students>() {
-            public int compare(Students o1, Students o2) {
-                if (o1.roll > o2.roll) {
-                    return 1;
-                }
-                return -1;
-            }
-        });
+        Collections.sort(list);
 
         for (Students s : list) {
             System.out.println(s);
