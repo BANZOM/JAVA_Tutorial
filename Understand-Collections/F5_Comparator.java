@@ -38,5 +38,36 @@ public class F5_Comparator {
         // Sorting of list with respect to own logic of sort
         Collections.sort(list, comp);
         System.out.println(list);
+
+
+
+        // Using comparator with strings
+        ArrayList<String> strList = new ArrayList<>();
+        strList.add("Aditya");
+        strList.add("Rahul Dube");
+        strList.add("Sonam");
+        strList.add("Amit");
+        strList.add("Sun");
+
+        System.out.println(strList);
+
+        // Sort the list as per alphabet
+        Collections.sort(strList);
+        System.out.println(strList);
+
+
+        // Sorting as per the length of the string
+        Collections.sort(strList, new Comparator<String>() {
+            public int compare(String o1, String o2) {
+                if(o1.length() > o2.length()) {
+                    return 1;
+                }
+                return -1;
+            }
+        });
+
+        System.out.println(strList);
+
+
     }
 }
