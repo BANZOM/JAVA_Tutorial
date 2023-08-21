@@ -14,7 +14,12 @@ public class Stream_Usuage {
 
         // using map to find square of even nums
         Stream<Integer> stream2 = stream1.map(i -> i * i);
-        stream2.forEach(i -> System.out.print(i + ", "));
+        // stream2.forEach(i -> System.out.print(i + ", "));
+
+        // using reduce to find sum of even nums
+        int sum = stream2.reduce(0, (a, b) -> a + b);
+        // stream3.forEach(i -> System.out.print(i + ", "));
+        System.out.println(sum);
 
         
 
