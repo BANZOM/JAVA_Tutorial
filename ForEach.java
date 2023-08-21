@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.function.Consumer;
 
 public class ForEach {
     public static void main(String[] args) {
@@ -19,6 +20,18 @@ public class ForEach {
 
         // Prining by ForEach
         list.forEach(i -> System.out.print(i + ", "));
+        System.out.println("\n-------------");
+
+
+        // Getting the actual concept behind forEach i.e Consumer
+        Consumer<Integer> consumer = new Consumer<Integer>() {
+            public void accept(Integer i) {
+                System.out.print(i + ", ");
+            }
+            
+        };
+        System.out.print("From Consumer: ");
+        list.forEach(consumer);
         System.out.println("\n-------------");
 
     }
