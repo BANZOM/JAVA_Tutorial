@@ -10,5 +10,16 @@ public class ForEach {
             System.out.print(list.get(i) + ", ");
         System.out.println("\n-------------");
 
+
+        // Prining by Enhanced loop
+        for(int i: list)
+            System.out.print(i + ", ");
+        System.out.println("\n-------------");
+
+
+        // Prining by ForEach
+        list.forEach(i -> System.out.print(i + ", "));
+        System.out.println("\n-------------");
+
     }
 }
