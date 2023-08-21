@@ -28,12 +28,7 @@ class Students implements Comparable<Students> {
 public class F6_Comparable {
     public static void main(String[] args) {
         
-        Comparator<Students> comp = (o1, o2) -> {
-                if (o1.name.length() > o2.name.length()) {
-                    return 1;
-                }
-                return -1;
-            };
+        Comparator<Students> comp = (o1, o2) -> (o1.name.length() > o2.name.length()) ? 1 : -1;
 
         // Here we'll try to use the Comparable interface for our own classes 
         List <Students> list = new ArrayList<>();
