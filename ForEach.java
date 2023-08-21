@@ -1,7 +1,11 @@
 import java.util.*;
 import java.util.function.Consumer;
 
+/**
+ * The `ForEach` class demonstrates different ways to iterate over a list of integers and print its elements using various looping constructs in Java.
+ */
 public class ForEach {
+    
     public static void main(String[] args) {
         
         List<Integer> list = Arrays.asList(1,2,3,6,5,3,21,8);
@@ -18,7 +22,7 @@ public class ForEach {
         System.out.println("\n-------------");
 
 
-        // Prining by ForEach
+        // Prining by ForEach  {it is consumer that is written in lambda expression}
         list.forEach(i -> System.out.print(i + ", "));
         System.out.println("\n-------------");
 
