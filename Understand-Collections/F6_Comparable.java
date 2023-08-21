@@ -27,7 +27,7 @@ class Students implements Comparable<Students> {
 
 public class F6_Comparable {
     public static void main(String[] args) {
-        
+
         Comparator<Students> comp = (o1, o2) -> (o1.name.length() > o2.name.length()) ? 1 : -1;
 
         // Here we'll try to use the Comparable interface for our own classes 
@@ -39,6 +39,7 @@ public class F6_Comparable {
         list.add(new Students(14, "Amit"));
         list.add(new Students(25, "Sun"));
 
+        System.out.println("Original List:");
         for (Students s : list) {
             System.out.println(s);
         }
@@ -46,6 +47,7 @@ public class F6_Comparable {
 
         Collections.sort(list);
 
+        System.out.println("Sorted by roll:");
         for (Students s : list) {
             System.out.println(s);
         }
@@ -55,6 +57,7 @@ public class F6_Comparable {
         // Using comparator with strings to sort it as per string length
         Collections.sort(list, comp);
 
+        System.out.println("Sorted by name length:");
         for (Students s : list) {
             System.out.println(s);
         }
