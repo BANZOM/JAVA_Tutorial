@@ -9,9 +9,11 @@ class Students {
         this.name = name;
     }
 
+    @Override
     public String toString() {
         return roll + " : " + name;
     }
+
 
 
 }
@@ -28,6 +30,8 @@ public class F6_Comparable {
         list.add(new Students(4, "Amit"));
         list.add(new Students(5, "Sun"));
 
-        System.out.println(list);
+        for (Students s : list) {
+            System.out.println(s);
+        }
     }
 }
