@@ -20,9 +20,16 @@ public class Dynamic_Method_Dispatch {
         B_D b = new B_D();
         C_D c = new C_D();
 
-        a.show();
-        b.show();
-        c.show();
+        // a.show();
+        // b.show();
+        // c.show();
 
+        A_D m;
+        m = a;
+        m.show();
+        m = b;
+        m.show();
+        m = c;
+        m.show();
     }
 }
