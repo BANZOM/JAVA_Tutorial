@@ -42,4 +42,11 @@ public class Box<T> {
     public List<T> getItems() {
         return items;
     }
+
+    @Override
+    public String toString() {
+        return "Box [items=" + items + "]";
+    }
+
+    
 }
