@@ -47,6 +47,10 @@ public class Box<T extends Boxable> {
         return items.size();
     }
 
+    public double getTotalWeight() {
+        return this.items.stream().mapToDouble(Boxable::getWeight).sum();
+    }
+
     @Override
     public String toString() {
         return "Box [items=" + items + "]";
