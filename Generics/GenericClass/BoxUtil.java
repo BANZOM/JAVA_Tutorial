@@ -12,4 +12,8 @@ public class BoxUtil {
     public static <T extends Boxable> int getItemCount(Box<T> box) {
         return box.getItems().size();
     }
+
+    public static <T extends Boxable> Box<T> getEmptyBox() {
+        return new Box<>();
+    }
 }
