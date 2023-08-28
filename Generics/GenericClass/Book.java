@@ -1,6 +1,6 @@
 package Generics.GenericClass;
 
-public class Book {
+public class Book implements Boxable {
     private String name;
     private String author;
     private int yearOfPublish;
