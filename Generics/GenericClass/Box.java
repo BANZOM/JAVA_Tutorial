@@ -17,12 +17,25 @@ public class Box<T> {
     }
 
     /**
+     * Adds an item to the box.
+     * 
+     * @param item the item to be added
+     */
+    public void addItem(T item) {
+        items.add(item);
+    }
+
+    /**
      * Returns the latest item added to the box.
      * 
      * @return the latest item added to the box
+     * @throws NoSuchElementException if the box is empty
      */
-    public T getLatestitems() {
-        return this.items.get(this.items.size() - 1);
+    public T getLatestItem() {
+        if (items.isEmpty()) {
+            throw new NoSuchElementException("Box is empty");
+        }
+        return items.get(items.size() - 1);
     }
 
     /**
@@ -30,23 +43,12 @@ public class Box<T> {
      * 
      * @return the count of items in the box
      */
-    public int getCountOfitems() {
-        return this.items.size();
-    }
-
-    /**
-     * Returns the list of items in the box.
-     * 
-     * @return the list of items in the box
-     */
-    public List<T> getItems() {
-        return items;
+    public int getItemCount() {
+        return items.size();
     }
 
     @Override
     public String toString() {
         return "Box [items=" + items + "]";
     }
-
-    
 }
