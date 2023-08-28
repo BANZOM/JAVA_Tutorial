@@ -6,7 +6,7 @@ import java.util.*;
  * 
  * @param <T> the type of items stored in the box
  */
-public class Box<T> {
+public class Box<T extends Boxable> {
     private List<T> items;
 
     /**
