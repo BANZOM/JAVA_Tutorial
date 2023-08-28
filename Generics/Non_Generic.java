@@ -18,7 +18,7 @@ public class Non_Generic {
     }
 
     private static void someOperation(List list) {
-        String s = (String) list.get(0);
+        String s = (String) list.get(0);  // raise exception if in case of type mismatch
         System.out.println(s);
     }
 }
