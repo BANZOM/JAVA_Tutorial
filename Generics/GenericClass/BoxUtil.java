@@ -9,7 +9,7 @@ public class BoxUtil {
      * @param <T> The type of items in the `Box`.
      * @return The number of items in the `Box`.
      */
-    public static <T> int getItemCount(Box<T> box) {
+    public static <T extends Boxable> int getItemCount(Box<T> box) {
         return box.getItems().size();
     }
 }
