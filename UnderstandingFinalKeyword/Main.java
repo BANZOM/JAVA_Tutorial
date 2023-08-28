@@ -16,7 +16,7 @@ public class Main {
 
         // final with class
         GrandChildClass grandChildClass = new GrandChildClass();
-        grandChildClass.printStar(); // error
+        // grandChildClass.printStar(); // error
     
     }
 }

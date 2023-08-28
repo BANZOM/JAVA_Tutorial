@@ -1,5 +1,5 @@
 package UnderstandingFinalKeyword;
 
-public class GrandChildClass extends ChildClass{ // The type GrandChildClass cannot subclass the final class ChildClass
-    
+public class GrandChildClass { // The type GrandChildClass cannot subclass the final class ChildClass
+    // this cannot extend any final class
 }
