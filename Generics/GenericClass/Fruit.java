@@ -3,7 +3,7 @@ package Generics.GenericClass;
 /**
  * The `Fruit` class represents a fruit object with its name, color, and weight.
  */
-public class Fruit {
+public class Fruit implements Boxable {
     private String name;
     private String color;
     private double weight;
