@@ -13,6 +13,10 @@ public class TestWildCard {
         fruitBox.addItem(new Fruit("Banana", "Yellow", 0.2));
 
         System.out.println("Item Count: " + BoxUtil.getItemCount(fruitBox));
-        System.out.println("Average Weight: " + fruitBox.getAverageWeightOfFruits());
+        System.out.println("Average Weight: " + Box.getAverageWeightOfFruits(fruitBox));
+
+        Box<Book> bookBox = new Box<>();
+        // System.out.println("Average Weight: " + Box.getAverageWeightOfFruits(bookBox)); Error since this method is restricted to only Fruits.
+
     }
 }
