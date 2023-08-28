@@ -14,17 +14,17 @@ public class TestBoxGenerics {
         fruitBox.addItem(new Fruit("Apple", "Red", 0.1));
         fruitBox.addItem(new Fruit("Banana", "Yellow", 0.2));
 
-        // System.out.println(bookBox.getLatestItem());
-        // System.out.println(bookBox);
-        // System.out.println(fruitBox.getLatestItem());
-        // System.out.println(fruitBox);
+        System.out.println(bookBox.getLatestItem());
+        System.out.println(bookBox);
+        System.out.println(fruitBox.getLatestItem());
+        System.out.println(fruitBox);
 
-        // System.out.println(bookBox.getItemCount());
-        // System.out.println(fruitBox.getItemCount());
+        System.out.println(bookBox.getItemCount());
+        System.out.println(fruitBox.getItemCount());
 
-        // System.out.println("Book Box Size: " + BoxUtil.getItemCount(bookBox));
-        // System.out.println("Fruit Box Size: " + BoxUtil.getItemCount(fruitBox));
+        System.out.println("Book Box Size: " + BoxUtil.getItemCount(bookBox));
+        System.out.println("Fruit Box Size: " + BoxUtil.getItemCount(fruitBox));
 
-        Box<Integer> integerBox = new Box<>();  //--> Error because Integer is not under the bound of Box i.e BoundMismatch
+        // Box<Integer> integerBox = new Box<>();  //--> Error because Integer is not under the bound of Box i.e BoundMismatch
     }
 }
