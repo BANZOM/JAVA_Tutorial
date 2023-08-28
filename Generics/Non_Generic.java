@@ -10,7 +10,11 @@ public class Non_Generic {
         list.add(value);
 
         someOperation(list);
-        
+        /*
+         * without generic: 
+         * 1. Explicit cast
+         * 2. Type safety
+         */
     }
 
     private static void someOperation(List list) {
