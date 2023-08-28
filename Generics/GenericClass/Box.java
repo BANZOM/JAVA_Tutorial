@@ -51,4 +51,8 @@ public class Box<T> {
     public String toString() {
         return "Box [items=" + items + "]";
     }
+
+    public List<T> getItems() {
+        return items;
+    }
 }
