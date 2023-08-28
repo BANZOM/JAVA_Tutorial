@@ -8,10 +8,14 @@ public class BoxUtil {
      * @param box The `Box` object.
      * @param <T> The type of items in the `Box`.
      * @return The number of items in the `Box`.
-     */
-    public static <T extends Boxable> int getItemCount(Box<T> box) {
+     */ 
+    public static int getItemCount(Box<?> box) {
         return box.getItems().size();
     }
+    // public static <T extends Boxable> int getItemCount(Box<T> box) {
+    //     return box.getItems().size();
+    // }
+
 
     public static <T extends Boxable> Box<T> getEmptyBox() {
         return new Box<>();
