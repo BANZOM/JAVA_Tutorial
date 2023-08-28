@@ -5,13 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class Operations <N extends Number & Comparable<N>> {
-    List<N> list;
+    private List<N> list;
 
     public Operations(List<N> list) {
         this.list = list;
     }
 
-    public List sort() {
+    public List<N> sort() {
         Collections.sort(this.list);
         return this.list;
     }
