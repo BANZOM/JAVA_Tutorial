@@ -59,4 +59,8 @@ public class Box<T extends Boxable> {
     public List<T> getItems() {
         return items;
     }
+
+    public double getAverageWeightOfFruits() {
+        return this.items.stream().mapToDouble(Boxable::getWeight).average().getAsDouble();
+    }
 }
