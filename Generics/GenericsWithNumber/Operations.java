@@ -15,4 +15,8 @@ public class Operations <N extends Number & Comparable<N>> {
         Collections.sort(this.list);
         return this.list;
     }
+
+    public N getMax() {
+        return Collections.max(this.list);
+    }
 }
