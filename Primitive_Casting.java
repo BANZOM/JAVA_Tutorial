@@ -3,5 +3,8 @@ public class Primitive_Casting {
         float f = 1000.5f;
         int i = (int)f;
         System.out.println(i);
+
+        short s = (short)f;
+        System.out.println(s);
     }
 }
