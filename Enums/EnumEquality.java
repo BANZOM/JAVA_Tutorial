@@ -10,5 +10,8 @@ public class EnumEquality {
         
         if(a.equals(b))
             System.out.println("equals");
+        
+
+        System.out.println(a instanceof BasicEnum);
     }
 }
