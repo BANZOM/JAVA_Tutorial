@@ -53,8 +53,9 @@ public class File1 {
 
             System.out.println("Deserialized data is fetched from Serialization/TestSerialization.ser");
             System.out.println(obj1);
-            System.out.println(obj1.a + " " + obj1.b); // Print the values of the variables a and b in the deserialized
-                                                       // object
+
+            // Print the values of the variables a and b in the deserialized object
+            System.out.println(obj1.a + " " + obj1.b); 
         } catch (Exception e) {
             e.printStackTrace();
         }
