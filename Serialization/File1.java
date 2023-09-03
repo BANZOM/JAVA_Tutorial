@@ -57,6 +57,7 @@ public class File1 {
             // Print the values of the variables a and b in the deserialized object
             System.out.println(obj1.a + " " + obj1.b);
             System.out.println(obj1.c.getVar1()); 
+            System.out.println(obj1.d.gettest());
         } catch (Exception e) {
             e.printStackTrace();
         }
