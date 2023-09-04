@@ -7,6 +7,6 @@ public class CalenderClass {
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-        System.out.println(String.format("%d/%d/%d", day, month, year));
+        System.out.println(String.format("%d/%d/%d", day, month+1, year));
     }
 }
