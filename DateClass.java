@@ -6,5 +6,9 @@ public class DateClass {
         String dateAsString = d.toString();
 
         System.out.println("Date as String: " + dateAsString);
+
+        Long timeInMillis = d.getTime();
+
+        System.out.println("Time in Milliseconds: " + timeInMillis);
     }
 }
