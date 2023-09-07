@@ -16,8 +16,8 @@ public class NumberFormatClass {
         System.out.println("Formatted Number: " + formattedNum);
 
         // Adding console logs for debugging
-        System.out.println("Locale: " + usLocale);
-        System.out.println("NumberFormat: " + numberFormat);
-        System.out.println("Number: " + num);
+        // System.out.println("Locale: " + usLocale);
+        // System.out.println("NumberFormat: " + numberFormat);
+        // System.out.println("Number: " + num);
     }
 }
