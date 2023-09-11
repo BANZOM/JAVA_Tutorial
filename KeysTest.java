@@ -18,5 +18,7 @@ public class KeysTest {
         System.out.println(treeMap.lowerKey("3"));      // 2
         System.out.println(treeMap.floorKey("3"));      // 3
         System.out.println(treeMap.ceilingKey("3"));    // 3
+
+        System.out.println(treeMap.firstKey());        // 1
     }
 }
