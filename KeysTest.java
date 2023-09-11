@@ -11,9 +11,12 @@ public class KeysTest {
         treeMap.put("5","five");
         treeMap.put("6","six");
 
-        System.out.println(treeMap.keySet());
-        System.out.println(treeMap.values());
+        System.out.println(treeMap.keySet());          // [1, 2, 3, 4, 5, 6]
+        System.out.println(treeMap.values());         // [one, two, three, four, five, six]
 
-        System.out.println(treeMap.higherKey("3"));
+        System.out.println(treeMap.higherKey("3"));     // 4
+        System.out.println(treeMap.lowerKey("3"));      // 2
+        System.out.println(treeMap.floorKey("3"));      // 3
+        System.out.println(treeMap.ceilingKey("3"));    // 3
     }
 }
