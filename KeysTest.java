@@ -1,3 +1,4 @@
+import java.util.SortedMap;
 import java.util.TreeMap;
 
 public class KeysTest {
@@ -20,5 +21,9 @@ public class KeysTest {
         System.out.println(treeMap.ceilingKey("3"));    // 3
 
         System.out.println(treeMap.firstKey());        // 1
+
+        SortedMap<String, String> sortedMap = new TreeMap<>(treeMap);
+        System.out.println(sortedMap.keySet());      // [1, 2, 3, 4, 5, 6]
+        System.out.println(sortedMap.values());     // [one, two, three, four, five, six]
     }
 }
